@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!--
+Site name: My Travel List
+Developer: Pedro Santiago
+Term Number: 1209
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="This is a simple but handy travel list web app." />
+		<meta name="keywords" content="travel, list" />
+		<meta name="robots" content="follow" />
+		<!-- Allows our content to size correctly to mobile displays -->
+		<meta name="viewport" content="target-densitydpi=device-dpi"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<title>Add New Item</title>
+	</head>
+		<body>
+			<!-- Page title -->
+			<h1>Add Item</h1>
+			<!-- Add Item form -->
+			<form action="">
+				<fieldset>
+					<legend>Item information:</legend>
+					<h2>Category:</h2>
+					<select>
+						<option value="footwear">Foot Wear</option>
+						<option value="clothing">Clothing</option>
+						<option value="personalhygiene">Personal Hygiene</option>
+					</select><br /><br />
+					Item: <input type="text" item="newitem" size="32" /><br /><br />
+					Quantity: <input type="range" item="quantity" /><br /><br />
+					<h3>Trip options:</h3>
+					<label for="roadtrip">Road Trip</label>
+					<input type="radio" name="transportation" id="roadtrip"/><br />
+					<label for="planetrip">Plane Trip</label>
+					<input type="radio" name="transportation" id="planetrip"/><br /><br />
+					Date: <input type="date" /><br /><br />
+					Notes: <textarea name="notes" rows="3" cols="42" placeholder=""  ></textarea><br />
+					<!-- Submit button -->
+					<input type="submit" value="Submit" /><br />
+					<!-- Clear stored data link -->
+					<a href="#">Clear Stored data</a>
+					<!-- Display all data link -->
+					<a href="#">Display all data</a>
+					<input type="hidden" item="#" />
+				</fieldset>
+			</form>
+		</body>
+</html>
